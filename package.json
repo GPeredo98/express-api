@@ -1,0 +1,24 @@
+{
+  "name": "express-api",
+  "version": "1.0.0",
+  "description": "Minimalistic API template",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx nodemon src/index.js"
+  },
+  "author": "Gabriel Peredo",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "bcryptjs": "^2.4.3",
+    "express-mysql-session": "^2.1.5",
+    "express-validator": "^6.9.0",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "passport-local": "^1.0.0",
+    "underscore": "^1.12.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
