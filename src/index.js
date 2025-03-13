@@ -1,6 +1,5 @@
 const express = require('express');
 const app = express();
-const path = require('path');
 const morgan = require('morgan');
 
 
@@ -22,7 +21,6 @@ app.get('/', (req, res) => {
       timestamp: new Date().toISOString()
   });
 });
-
 
 // Starting server
 app.use('/api/products', require('./routes/products'));
