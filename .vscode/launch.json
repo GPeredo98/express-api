@@ -1,0 +1,25 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+	  {
+		"name": "Debug con Nodemon",
+		"type": "node",
+		"request": "launch",
+		"runtimeExecutable": "npx",
+		"runtimeArgs": ["nodemon", "--inspect=0.0.0.0:9229", "src/index.js"],
+		"restart": true,
+		"console": "integratedTerminal",
+		"internalConsoleOptions": "neverOpen",
+		"skipFiles": ["<node_internals>/**"]
+	  },
+	  {
+		"name": "Debug Normal",
+		"type": "node",
+		"request": "launch",
+		"program": "${workspaceFolder}/src/index.js",
+		"console": "integratedTerminal",
+		"internalConsoleOptions": "neverOpen"
+	  }
+	]
+  }
+  
